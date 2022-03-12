@@ -87,9 +87,31 @@
           <a class="hover:underline font-light text-sm hidden lg:block lg:float-right mt-1" href="#">Xbox</a>
           
           
-          <a class="hover:underline font-light text-sm block lg:hidden float-right mt-1" href="#">More <img class="pt-2 w-3 float-right ml-1" src="../img/chevron-down-solid.svg" alt=""></a>
+          <a onclick="my()" class="hover:underline font-light text-sm block lg:hidden float-right focus:border-dashed
+          focus:border-2
+          focus:border-blue-200
+          focus:bg-slate-50 px-4 py-3 mt-[-10px] " href="#" >More <img class="pt-2 w-3 float-right ml-1" src="../img/chevron-down-solid.svg" alt=""></a>
           <a class="hover:underline font-light text-sm hidden lg:hidden mx:block mx:float-right mt-1" href="#">Xbox</a>         
         </div>
+        <div id="mymore" class="mor_nav absolute z-0 bg-slate-50 mf:ml-[425px] mx:ml-[464px] hidden">
+          <div class=" text-sm par_nav h-36 w-44 mx:h-24">
+            <a class=" text-sm  block p-3 mx:hidden" href="#">Xbox</a>
+            <a class=" text-sm  block p-3" href="#">Deals</a>
+            <a class=" text-sm  block p-3" href="#">Support</a>
+            <hr class=" h-1 bg-black">
+          </div>
+        </div>
+        <script>
+          function my(){
+              var x = document.getElementById("mymore");
+              if (x.style.display === "none"){
+                  x.style.display = "block";}
+              else{
+                  x.style.display = "none";
+              }
+              }
+        </script>
+
       </div>
     </div>
     <div class="top_r float-right flex pt-6">
@@ -153,7 +175,7 @@
         <li class=" text-sm"><a class=" hover:underline" href="#">Power Apps</a></li>
         <li class=" text-sm"><a class=" hover:underline" href="#">HoloLens 2</a></li>
       </ul>
-      <ul class="py-5 px-7 float-left space-y-4 w-[15%]">
+      <ul class="py-5 px-7 float-left space-y-4 xl:w-[15%] w-64">
         <li class=" font-bold"><a class=" hover:underline" href="#">Other</a></li>
         <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Rewards</a></li>
         <li class=" text-sm"><a class=" hover:underline" href="#">Free download & security</a></li>
@@ -179,6 +201,19 @@
       }
       }
 </script>
+<!-- .......part2......... -->
+<div class="mt">
+  <div class="mta">
+    <div class="mtt w-full bg-blue-700 ">
+      <a class=" text-center block hover:underline hover:ml-4 text-white text-sm py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
+    </div>
+    <div class="mttb">
+      
+    </div>
+  </div>
+</div>
+
+
 
 
 </body>
