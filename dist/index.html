@@ -12,7 +12,7 @@
     <div class="nav flex">
       <img onclick="myFunction()" class=" w-8 h-9 hover:cursor-pointer mt-2" src="../img/nav.png" alt="#">
       <!-- .....hidden nav.......... -->
-      <div id="myDIV" class="w_r space-x-2 mt-14 ml-[-25px] absolute z-0 bg-slate-200 w-[106%] hidden mf:block ">
+      <div id="myDIV" class="w_r space-x-2 mt-14 ml-[-25px] absolute z-10 bg-slate-200 w-[106%] hidden mf:block ">
 
         <div onclick="myFunctions()" class="box p-3 bg-slate-50 mt-[-63px] w-16 h-16 "><p class=" text-2xl ml-5 cursor-pointer m-auto font-bold">x</p></div>
         <script>
@@ -93,7 +93,7 @@
           focus:bg-slate-50 px-4 py-3 mt-[-10px] " href="#" >More <img class="pt-2 w-3 float-right ml-1" src="../img/chevron-down-solid.svg" alt=""></a>
           <a class="hover:underline font-light text-sm hidden lg:hidden mx:block mx:float-right mt-1" href="#">Xbox</a>         
         </div>
-        <div id="mymore" class="mor_nav absolute z-0 bg-slate-50 mf:ml-[425px] mx:ml-[464px] hidden">
+        <div id="mymore" class="mor_nav absolute z-10 bg-slate-50 mf:ml-[425px] mx:ml-[464px] hidden">
           <div class=" text-sm par_nav h-36 w-44 mx:h-24">
             <a class=" text-sm  block p-3 mx:hidden" href="#">Xbox</a>
             <a class=" text-sm  block p-3" href="#">Deals</a>
@@ -125,7 +125,7 @@
     </div>
   </div>
 </div>
-<div id="myfas" class="allm w-full absolute z-o hidden ">
+<div id="myfas" class="allm w-full absolute z-10 hidden ">
   <div class="allm_a w-10/12 m-auto bg-slate-50">
     <nav class=" inline-block">
       <ul class="py-5 px-7 float-left space-y-4">
@@ -202,19 +202,190 @@
       }
 </script>
 <!-- .......part2......... -->
-<div class="mt">
+<div class="mt  xl:w-11/12 xl:m-auto  w-full">
   <div class="mta">
     <div class="mtt w-full bg-blue-700 ">
       <a class=" text-center block hover:underline hover:ml-4 text-white text-sm py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
     </div>
-    <div class="mttb">
+    <div class="mttb xl:w-11/12 xl:m-auto  w-full">
+      <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          /* max-width: 1000px; */
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #717171;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
       
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: white;
+          border-radius: 50%;
+          box-shadow: 0.5px 0.5px .8px .8px gainsboro;
+        }
+        
+        /* Caption text */
+        .text {
+          padding: 8px 12px;  
+          bottom: 8px;
+          /* width: 100%; */
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 5px;
+          width: 5px;
+          margin: 0 2px;
+          background-color: black;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade pc:flex">
+          
+          <img class=" pc:float-right pc:w-1/2 w-full" src="../img/s1.webp">
+          <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#e6e6e6]">   
+            <div class="mgg ">
+              <h1 class=" text-black text-xl font-bold" >Up To 200$ off select Surface pro 8</h1>
+              <p class="text-sm" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+              <div class="butt mt-4">
+                <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
+                <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">Configer now<span class="hover:pl-2" >></span></a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../img/s2.webp" style="width:100%">
+          <div class="text">
+            <div class="mgg py-14">
+              <h1 class=" text-black text-xl font-bold" >Microsoft 365</h1>
+              <p class="text-sm" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+              <div class="butt mt-4">
+                <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
+                <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">For 1 person<span class="hover:pl-2" >></span></a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot " onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span title="pause slider" class=" cursor-pointer" >||</span>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
     </div>
   </div>
 </div>
-
-
-
-
 </body>
 </html>
