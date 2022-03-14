@@ -73,7 +73,7 @@
   <!-- .......top_full............... -->
   <div class="res  m-auto w-[95%]    hidden mf:block">
     <div class="top_l  mf:block ">
-      <div class="line w-2/3 float-left">
+      <div class="line w-2/3 float-left xl:w-2/4">
         <div class="w_f float-left">
           <a class="m-auto " href="#"><img class=" w-36 px-2 py-1" src="../img/microsoft.png" alt=""></a>
         </div>
@@ -225,23 +225,26 @@
       .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 40%;
         width: auto;
         padding: 16px;
-        margin-top: -22px;
+        /* margin-top: -22px; */
         color: #717171;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
         transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
+        border-radius: 70%;
         user-select: none;
+        border: 1px solid ghostwhite;
+        background-color:rgb(251, 250, 250);
       }
       
         
         /* Position the "next button" to the right */
         .next {
           right: 0;
-          border-radius: 3px 0 0 3px;
+          border-radius:70%;
+          background-color:rgb(251, 250, 250)
         }
         
         /* On hover, add a black background color with a little bit see-through */
@@ -256,7 +259,7 @@
           padding: 8px 12px;  
           bottom: 8px;
           /* width: 100%; */
-          text-align: center;
+          /* text-align: center; */
         }
         
         /* Number text (1/3 etc) */
@@ -279,7 +282,9 @@
           display: inline-block;
           transition: background-color 0.6s ease;
         }
-        
+        .zzz:hover + .nunn{
+          display: block;
+        }
         .active, .dot:hover {
           background-color: #717171;
         }
@@ -310,51 +315,66 @@
         </head>
         <body>
         
-        <div class="slideshow-container">
-        
-        <div class="mySlides fade pc:flex">
-          
-          <img class=" pc:float-right pc:w-1/2 w-full" src="../img/s1.webp">
-          <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#e6e6e6]">   
-            <div class="mgg ">
-              <h1 class=" text-black text-xl font-bold" >Up To 200$ off select Surface pro 8</h1>
-              <p class="text-sm" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
-              <div class="butt mt-4">
-                <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
-                <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">Configer now<span class="hover:pl-2" >></span></a></button>
+        <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%]">
+          <div class="slideshow-container ">  
+            <div class="mySlides fade pc:flex">
+              <img class=" pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s1.webp">
+              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] pc:text-left text-center">   
+                <div class="mgg  py-14 px-8 h-[324px]">
+                  <h1 class=" text-black text-xl font-bold py-2" >Up To 200$ off select Surface pro 8</h1>
+                  <p class="text-sm py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <div class="butt mt-4 py-1">
+                    <button class=" py-3" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
+                    <br class="hidden pc:block">
+                    <button class=" py-3"><a class=" px-3 py-2 hover:underline font-bold" href="#">Configer now<span class="hover:pl-2" >></span></a></button>
+                  </div>
+                  <div style="text-align:center" class=" pt-3 pc:hidden">
+                    <span class="dot " onclick="currentSlide(1)"></span> 
+                    <span class="dot " onclick="currentSlide(2)"></span>
+                    <span  title="pause slider" class=" cursor-pointer" >||</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="../img/s2.webp" style="width:100%">
-          <div class="text">
-            <div class="mgg py-14">
-              <h1 class=" text-black text-xl font-bold" >Microsoft 365</h1>
-              <p class="text-sm" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
-              <div class="butt mt-4">
-                <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
-                <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">For 1 person<span class="hover:pl-2" >></span></a></button>
+           </div> 
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img class="pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s2.webp" >
+              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] h-[340px]  pc:text-justify text-center">
+                <div class="mgg py-14 px-8">
+                  <h1 class=" text-black text-xl font-bold py-2" >Microsoft 365</h1>
+                  <p class="text-sm py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <div class="butt mt-4 py-1">
+                    <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
+                    <br class="hidden pc:block">
+                    <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">For 1 person<span class="hover:pl-2" >></span></a></button>
+                  </div>
+                  <div style="text-align:center" class=" pt-6 pc:hidden ">
+                    <span class="dot " onclick="currentSlide(1)"></span> 
+                    <span class="dot " onclick="currentSlide(2)"></span>
+                    <span  title="pause slider" class=" cursor-pointer" >||</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="text-center hidden pc:block pc:py-5">
+              <span class="dot " onclick="currentSlide(1)"></span> 
+              <span class="dot " onclick="currentSlide(2)"></span>
+              <span  title="pause slider" class=" cursor-pointer" >||</span>
+            </div>
         </div>
         
         
         
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- <div class="nunn hidden"> -->
+          <a class="prev mt-50 pc:mt-28 xl:ml-[-50px] xl:mt-5 " onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next mt-52 pc:mt-28 xl:mr-16 xl:mt-4 " onclick="plusSlides(1)">&#10095;</a>
+        <!-- </div> -->
         
         </div>
         <br>
         
-        <div style="text-align:center">
-          <span class="dot " onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span title="pause slider" class=" cursor-pointer" >||</span>
-        </div>
+        
         
         <script>
         var slideIndex = 1;
