@@ -7,8 +7,8 @@
 </head>
 <body>
   <!-- ......top.... -->
-<div class="top_top overflow-auto">
-  <div class="top w-11/12 m-auto mt-2 block mf:hidden">
+<div class="top_top overflow-auto ">
+  <div class="top w-11/12 m-auto mt-2 block mf:hidden divide-inherit">
     <div class="nav flex">
       <img onclick="myFunction()" class=" w-8 h-9 hover:cursor-pointer mt-2" src="../img/nav.png" alt="#">
       <!-- .....hidden nav.......... -->
@@ -52,8 +52,8 @@
         <hr class="py-[0.5px] bg-slate-400">
         <div class="h_one py-5 hover:bg-blue-200"><a class="ml-5" href="#">Viewe Sitemap</a></div>
         <hr>
-    </div>
-    <script>
+     </div>
+     <script>
       function myFunction(){
           var x = document.getElementById("myDIV");
           if (x.style.display === "none"){
@@ -62,9 +62,21 @@
               x.style.display = "none";
           }
           }
-  </script>
- <!-- .......last.......... -->
-      <img class=" w-14 h-12 hover:cursor-pointer" src="../img/search.png" alt="#">
+    </script>
+   <!-- .......last.......... -->
+        <img onclick="mx()" class=" w-14 h-12 hover:cursor-pointer" src="../img/search.png" alt="#">
+       <input id="ha" class="border-4 border-blue-900 p-2 z-10 absolute  h-11 ml-20 will-change-auto w-1/2 xm:w-3/4 sm:w-10/12 hidden" type="text" placeholder="Search Microsoft.com">
+       <script>
+        function mx(){
+            var x = document.getElementById("ha");
+            if (x.style.display === "none"){
+                x.style.display = "block";}
+            else{
+                x.style.display = "none";
+            }
+            }
+      </script>
+      
       <a class="m-auto" href="#"><img class=" w-32" src="../img/microsoft.png" alt="#"></a>
       <a class="w-9 mt-5 px-2" href="#"><img src="../img/checkbox.png" alt="#"></a>
       <a class="w-9 mt-5 px-2" href="#"><img src="../img/creat.png" alt="#"></a>
@@ -76,28 +88,30 @@
       <div class="line w-2/3 float-left xl:w-2/4">
         <div class="w_f float-left">
           <a class="m-auto " href="#"><img class=" w-36 px-2 py-1" src="../img/microsoft.png" alt=""></a>
+          
         </div>
+        <input id="haa" class="border-4 border-blue-900 p-1 z-10 absolute focus:border-4 h-11 mt-2 w-2/3 ml-[135px] lg:w-[70%]  hidden" type="text" placeholder="Search Microsoft.com">
         <div class="w_r space-x-2 inline-block mt-6">
-          <a class="hover:underline w-32 font-light text-sm" href="#">Microsoft 365</a>
-          <a class="hover:underline font-light text-sm" href="#">Office</a>
-          <a class="hover:underline font-light text-sm" href="#">Windows</a>
-          <a class="hover:underline font-light text-sm" href="#">Surface</a>
-          <a class="hover:underline font-light text-sm hidden lg:block mx:float-right mt-1" href="#">Support</a>
-          <a class="hover:underline font-light text-sm float-right hidden lg:block mt-1" href="#">Deals</a>
-          <a class="hover:underline font-light text-sm hidden lg:block lg:float-right mt-1" href="#">Xbox</a>
+          <a class="hover:underline w-32 font-thin text-xs" href="#">Microsoft 365</a>
+          <a class="hover:underline font-thin text-xs" href="#">Office</a>
+          <a class="hover:underline font-thin text-xs" href="#">Windows</a>
+          <a class="hover:underline font-thin text-xs" href="#">Surface</a>
+          <a class="hover:underline font-thin text-xs hidden lg:block mx:float-right mt-1" href="#">Support</a>
+          <a class="hover:underline font-thin text-xs float-right hidden lg:block mt-1" href="#">Deals</a>
+          <a class="hover:underline font-thin text-xs hidden lg:block lg:float-right mt-1" href="#">Xbox</a>
           
           
-          <a onclick="my()" class="hover:underline font-light text-sm block lg:hidden float-right focus:border-dashed
+          <a class="hover:underline font-thin text-xs block lg:hidden float-right focus:border-dashed
           focus:border-2
           focus:border-blue-200
           focus:bg-slate-50 px-4 py-3 mt-[-10px] " href="#" >More <img class="pt-2 w-3 float-right ml-1" src="../img/chevron-down-solid.svg" alt=""></a>
-          <a class="hover:underline font-light text-sm hidden lg:hidden mx:block mx:float-right mt-1" href="#">Xbox</a>         
+          <a class="hover:underline font-thin text-xs hidden lg:hidden mx:block mx:float-right mt-1" href="#">Xbox</a>         
         </div>
         <div id="mymore" class="mor_nav absolute z-10 bg-slate-50 mf:ml-[425px] mx:ml-[464px] hidden">
-          <div class=" text-sm par_nav h-36 w-44 mx:h-24">
-            <a class=" text-sm  block p-3 mx:hidden" href="#">Xbox</a>
-            <a class=" text-sm  block p-3" href="#">Deals</a>
-            <a class=" text-sm  block p-3" href="#">Support</a>
+          <div class=" text-xs par_nav h-36 w-44 mx:h-24">
+            <a class=" text-xs  block p-3 mx:hidden" href="#">Xbox</a>
+            <a class=" text-xs  block p-3" href="#">Deals</a>
+            <a class=" text-xs  block p-3" href="#">Support</a>
             <hr class=" h-1 bg-black">
           </div>
         </div>
@@ -115,12 +129,24 @@
       </div>
     </div>
     <div class="top_r float-right flex pt-6">
-      <a onclick="myFunctionsef()" class="hover:underline font-light text-sm mx-4 focus:border-dashed focus:border-2 focus:border-blue-50 px-1 py-4 mt-[-10px] focus:bg-slate-50" href="#">All Microsoft<img class="  w-3 float-right ml-1 pt-2" src="../img/chevron-down-solid.svg" alt="#"></a>
-      <p class="hidden xl:block hover:cursor-pointer hover:underline" >Search</p>
-      <img class=" w-10 h-12 hover:cursor-pointer mt-[-15px] mx-1 xl:ml-0" src="../img/search.png" alt="#">
-      <p class="hidden xl:block ml-3 hover:cursor-pointer hover:underline" >Card</p>
+      <a onclick="myFunctionsef()" class="hover:underline font-thin text-xs mx-4 focus:border-dashed focus:border-2 focus:border-blue-50 px-1 py-4 mt-[-13px] focus:bg-slate-50" href="#">All Microsoft<img class="  w-3 float-right ml-1 pt-2" src="../img/chevron-down-solid.svg" alt="#"></a>
+      <p onclick="my()" class="hidden xl:block hover:cursor-pointer hover:underline text-xs " >Search</p>
+      
+      <img onclick="mz()" class=" w-10 h-12 hover:cursor-pointer mt-[-15px] mx-1 xl:ml-0" src="../img/search.png" alt="#">
+      
+      <script>
+        function mz(){
+            var x = document.getElementById("haa");
+            if (x.style.display === "none"){
+                x.style.display = "block";}
+            else{
+                x.style.display = "none";
+            }
+            }
+      </script>
+      <p class="hidden xl:block ml-3 hover:cursor-pointer hover:underline text-xs " >Card</p>
       <a class="w-7 px-1 mx-1" href="#"><img class="w-9 " src="../img/checkbox.png" alt="#"></a>
-      <p class="hidden xl:block ml-3 hover:cursor-pointer hover:underline" >Singin</p>
+      <p class="hidden xl:block ml-3 hover:cursor-pointer hover:underline text-xs " >Singin</p>
       <a class="w-7 px-1 mx-1" href="#"><img class="w-9 " src="../img/creat.png" alt="#"></a>
     </div>
   </div>
@@ -130,7 +156,7 @@
     <nav class=" inline-block">
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Windows Apps</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">OneDrive</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">OneDrive</a></li>
         <li><a class=" hover:underline" href="#">Outlook</a></li>
         <li><a class=" hover:underline" href="#">Skype</a></li>
         <li><a class=" hover:underline" href="#">OneNote</a></li>
@@ -139,7 +165,7 @@
       </ul>
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">PCs & Devices</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Computer</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Computer</a></li>
         <li><a class=" hover:underline" href="#">Shop Xbox</a></li>
         <li><a class=" hover:underline" href="#">Accessories</a></li>
         <li><a class=" hover:underline" href="#">VR & mixed reality</a></li>
@@ -147,43 +173,43 @@
       </ul>     
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Entertainment</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Xbox Game Pass Ultimete</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">PC Game Pass</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Xbox games</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">PC Games</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Windows digital games</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Movies & TV</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Xbox Game Pass Ultimete</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">PC Game Pass</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Xbox games</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">PC Games</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Windows digital games</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Movies & TV</a></li>
       </ul> <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Busniess</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Cloud</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Azure</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Dynamics 365</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft 365</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Windows 365</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Industry</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Advertising</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Shop Busness</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Cloud</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Azure</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Dynamics 365</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft 365</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Windows 365</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Industry</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Advertising</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Shop Busness</a></li>
       </ul>
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Deviloper & IT</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">NET</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Visual Studio</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Windows Server</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Windows Dev Center</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Docs</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Power Platform</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Power Apps</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">HoloLens 2</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">NET</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Visual Studio</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Windows Server</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Windows Dev Center</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Docs</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Power Platform</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Power Apps</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">HoloLens 2</a></li>
       </ul>
       <ul class="py-5 px-7 float-left space-y-4 xl:w-[15%] w-64">
         <li class=" font-bold"><a class=" hover:underline" href="#">Other</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Rewards</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Free download & security</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Education</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Virtual workshops and training</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Gift cards</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Licensing</a></li>
-        <li class=" text-sm"><a class=" hover:underline" href="#">Microsoft Experince Center</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Rewards</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Free download & security</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Education</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Virtual workshops and training</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Gift cards</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Licensing</a></li>
+        <li class=" text-xs"><a class=" hover:underline" href="#">Microsoft Experince Center</a></li>
       </ul>
     </nav>
     <div class="las bg-slate-300">
@@ -205,7 +231,7 @@
 <div class="mt  xl:w-11/12 xl:m-auto  w-full">
   <div class="mta">
     <div class="mtt w-full bg-blue-700 ">
-      <a class=" text-center block hover:underline hover:ml-4 text-white text-sm py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
+      <a class=" text-center block hover:underline hover:ml-4 text-white text-xs py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
     </div>
     <div class="mttb xl:w-11/12 xl:m-auto  w-full">
       <style>
@@ -236,7 +262,7 @@
         border-radius: 70%;
         user-select: none;
         border: 1px solid ghostwhite;
-        background-color:rgb(251, 250, 250);
+        background-color:#e6e6e6;
       }
       
         
@@ -244,7 +270,7 @@
         .next {
           right: 0;
           border-radius:70%;
-          background-color:rgb(251, 250, 250)
+          background-color:#e6e6e6
         }
         
         /* On hover, add a black background color with a little bit see-through */
@@ -320,9 +346,9 @@
             <div class="mySlides fade pc:flex">
               <img class=" pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s1.webp">
               <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] pc:text-left text-center">   
-                <div class="mgg  py-14 px-8 h-[324px]">
+                <div class="mgg  py-14 px-8 sm:h-[324px]">
                   <h1 class=" text-black text-xl font-bold py-2" >Up To 200$ off select Surface pro 8</h1>
-                  <p class="text-sm py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
                   <div class="butt mt-4 py-1">
                     <button class=" py-3" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
                     <br class="hidden pc:block">
@@ -343,7 +369,7 @@
               <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] h-[340px]  pc:text-justify text-center">
                 <div class="mgg py-14 px-8">
                   <h1 class=" text-black text-xl font-bold py-2" >Microsoft 365</h1>
-                  <p class="text-sm py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
                   <div class="butt mt-4 py-1">
                     <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
                     <br class="hidden pc:block">
@@ -362,20 +388,14 @@
               <span class="dot " onclick="currentSlide(2)"></span>
               <span  title="pause slider" class=" cursor-pointer" >||</span>
             </div>
-        </div>
-        
-        
-        
+        </div>  
         <!-- <div class="nunn hidden"> -->
-          <a class="prev mt-50 pc:mt-28 xl:ml-[-50px] xl:mt-5 " onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next mt-52 pc:mt-28 xl:mr-16 xl:mt-4 " onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev mt-52 pc:mt-28 xl:ml-[-50px] xl:mt-24 " onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next mt-52 pc:mt-28 xl:mr-16 xl:mt-24 " onclick="plusSlides(1)">&#10095;</a>
         <!-- </div> -->
         
         </div>
         <br>
-        
-        
-        
         <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -404,6 +424,28 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
+    </div>
+  </div>
+</div>
+<!-- ..........part3........ -->
+<div class="par3">
+  <div class="par3_w w-11/12 m-auto py-16">
+    <div class="par3_al">
+      <nav>
+        <ul class=" sm:flex">
+          <li class=" pt-4" ><a class=" inline-flex sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/microsoft-50.png" alt=""><p class=" font-bold  ml-1 sm:text-center">choose your microsoft 365</p></a></li>
+
+          <li class=" pt-4" ><a class=" inline-flex sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/shop.webp" alt=""><p class=" font-bold ml-1 sm:text-center">Shop surface device</p></a></li>
+
+          <li class=" pt-4" ><a class=" inline-flex sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/xbox-50.png" alt=""><p class=" font-bold ml-1 sm:text-center">Buy Xbox games and consoles</p></a></li> 
+
+          <li class=" pt-4" ><a class=" inline-flex  sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/microsoft-50.png" alt=""><p class=" font-bold ml-1 sm:text-center">Shop surface device</p></a></li>
+
+          <li class=" pt-4" ><a class=" inline-flex  sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/Find.webp" alt=""><p class=" font-bold ml-1 sm:text-center">choose your microsoft 365</p></a></li>
+
+          <li class=" pt-4" ><a class=" inline-flex  sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/s_busniess.webp" alt=""><p class=" font-bold  ml-1 sm:text-center">Shop surface device</p></a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
