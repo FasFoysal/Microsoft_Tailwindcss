@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" type="image/x-icon">
+  <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
 </head>
 <body>
   <!-- ......top.... -->
@@ -238,6 +240,7 @@
         * {box-sizing: border-box}
         body {font-family: Verdana, sans-serif; margin:0}
         .mySlides {display: none}
+        /* .mySlides2 {display: none} */
         img {vertical-align: middle;}
         
         /* Slideshow container */
@@ -308,13 +311,26 @@
           display: inline-block;
           transition: background-color 0.6s ease;
         }
+        /* .dot2 {
+          cursor: pointer;
+          height: 5px;
+          width: 5px;
+          margin: 0 2px;
+          background-color: black;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        } */
         .zzz:hover + .nunn{
           display: block;
         }
         .active, .dot:hover {
           background-color: #717171;
         }
-        
+        /* .active, .dot2:hover {
+          background-color: #717171;
+        }
+         */
         /* Fading animation */
         .fade {
           -webkit-animation-name: fade;
@@ -338,8 +354,6 @@
           .prev, .next,.text {font-size: 11px}
         }
         </style>
-        </head>
-        <body>
         
         <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%]">
           <div class="slideshow-container ">  
@@ -423,6 +437,23 @@
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
+
+        function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
         </script>
     </div>
   </div>
@@ -446,6 +477,174 @@
           <li class=" pt-4" ><a class=" inline-flex  sm:block"  href="#"><img class=" w-7 sm:m-auto" src="../img/s_busniess.webp" alt=""><p class=" font-bold  ml-1 sm:text-center">Shop surface device</p></a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+</div>
+<!-- ........part4.......... -->
+<div class="part_4 overflow-auto">
+  <div class="part_4m w-11/12 f4:m-auto sm:m-auto mx:flex ">
+    <div class="p4l">
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RWAshJ.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Surface Laptop 4</h3>
+        <p class="font-thin text-sm py-2">Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed, and improved performance.</p>
+        <a class=" text-blue-800 underline py-2" href="#">Shop now ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RWPy7X.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Up to $200 off select Surface Laptop Studio</h3>
+        <p class="font-thin text-sm py-2">
+          Flex your creative muscle with a touchscreen device that seamlessly transitions from laptop to portable creative canvas.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Shop now ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RE4DkWk.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Never miss a beat</h3>
+        <p class="font-thin text-sm py-2">Discover the latest audio from Surface, featuring ultra-comfortable design, immersive sound, and all-day battery.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Shop Surface Earbuds ></a>
+        <br>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Shop Surface Headphones 2 ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RE4PsT4.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">PC Game Pass</h3>
+        <p class="font-thin text-sm py-2">Unlock 100+ great games and EA Play, plus get your first month for $1. Offer available to new subscribers only.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Join now ></a>
+        <br>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">compare all plans ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ........part5...... -->
+<div class="slideshow pc:mt-8 xl:w-11/12 xl:m-auto ">  
+  <div class="pc:flex">
+    <img class=" pc:float-left w-full pc:w-1/2  pc:h-[340px] pc:hidden" src="../img/RE4GOM8.webp">
+    <img class="w-full hidden pc:block absolute h-[470px] xl:w-[1300px]" src="../img/RE4GOM7.webp">
+    <div class="bg-[#e6e6e6] pc:float-left pc:w-1/2 pc:text-left text-center relative pc:h-[470px]">   
+      <div class="mgg  py-14 px-8 pc:py-36">
+        <h1 class=" text-black text-xl font-bold py-2">Xbox Series S</h1>
+        <p class="text-xs py-1" >Next Ganeration Performance in the smallest Xbox ever</p>
+        <div class="butt mt-4 py-1">
+          <button class=" py-3" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Shop now <span class="hover:pl-2" >></span></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div> 
+ <!-- .......part6........ -->
+ <div class="part_4 overflow-auto mt-7">
+  <div class="part_4m w-11/12 f4:m-auto sm:m-auto mx:flex]">
+    <h1 class=" font-bold text-xl pl-3">For business</h1>
+    <div class="p4l">
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RWUEOR.webp" alt="">
+        <div class="4con ">
+        <h3 class=" font-bold py-3">Surface Pro 8 for Business Essentials Bundle</h3>
+        <p class="font-thin text-sm py-2">Enhance productivity with Surface Pro 8 (optional LTE connectivity), Surface Pro Signature Keyboard, and Microsoft Complete Protection Plan. Questions? Book an online consultation.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Shop now ></a>
+        <br>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#"> Book a consultation  ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80 f4:h-[500px] lg:h-96">
+        <img class=" xm:w-full" src="../img/RWLJ3u.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Get Microsoft Teams for free</h3>
+        <p class="font-thin text-sm py-2">Get online meetings, chat, and shared cloud storage - all in one place with the free version of Microsoft Teams</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Sing up for free ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80 ">
+        <img class=" xm:w-full" src="../img/RWGaY8.webp" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Welcome to your Windows 365 Cloud PC</h3>
+        <p class="font-thin text-sm py-2">Securely stream your Windows experience from the Microsoft cloud to any device.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Get it today ></a>
+        </div>
+      </div>
+
+      <div class="4_box p-4 f4:float-left f4:w-60 sm:w-64 pc:w-80">
+        <img class=" xm:w-full" src="../img/RWURKU.jpeg" alt="">
+        <div class="4con ">
+          <h3 class=" font-bold py-2">Thrive in a hybrid world</h3>
+        <p class="font-thin text-sm py-2">Discover tools, resources, and strategies to help your employees succeed in the new world of flexible work.</p>
+        <a class=" text-blue-800 hover:underline py-2 font-bold" href="#">Learn more ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .......part7....... -->
+<div class="mt  xl:w-11/12 xl:m-auto  w-full">
+  <div class="mta">
+    <div class="mtt w-full bg-blue-700 ">
+      <a class=" text-center block hover:underline hover:ml-4 text-white text-xs py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
+    </div>
+    <div class="mttb xl:w-11/12 xl:m-auto  w-full">
+        <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%]">
+          <div class="slideshow-container ">  
+            <div class="mySlides fade pc:flex">
+              <img class=" pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s1.webp">
+              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] pc:text-left text-center">   
+                <div class="mgg  py-14 px-8 sm:h-[324px]">
+                  <h1 class=" text-black text-xl font-bold py-2" >Up To 200$ off select Surface pro 8</h1>
+                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <div class="butt mt-4 py-1">
+                    <button class=" py-3" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
+                    <br class="hidden pc:block">
+                    <button class=" py-3"><a class=" px-3 py-2 hover:underline font-bold" href="#">Configer now<span class="hover:pl-2" >></span></a></button>
+                  </div>
+                  <div style="text-align:center" class=" pt-3 pc:hidden">
+                    <span class="dot " onclick="currentSlide(1)"></span> 
+                    <span class="dot " onclick="currentSlide(2)"></span>
+                    <span  title="pause slider" class=" cursor-pointer" >||</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div> 
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img class="pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s2.webp" >
+              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] h-[340px]  pc:text-justify text-center">
+                <div class="mgg py-14 px-8">
+                  <h1 class=" text-black text-xl font-bold py-2" >Microsoft 365</h1>
+                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
+                  <div class="butt mt-4 py-1">
+                    <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
+                    <br class="hidden pc:block">
+                    <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">For 1 person<span class="hover:pl-2" >></span></a></button>
+                  </div>
+                  <div style="text-align:center" class=" pt-6 pc:hidden ">
+                    <span class="dot " onclick="currentSlide(1)"></span> 
+                    <span class="dot " onclick="currentSlide(2)"></span>
+                    <span  title="pause slider" class=" cursor-pointer" >||</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center hidden pc:block pc:py-5">
+              <span class="dot " onclick="currentSlide(1)"></span> 
+              <span class="dot " onclick="currentSlide(2)"></span>
+              <span  title="pause slider" class=" cursor-pointer" >||</span>
+            </div>
+        </div>
+        </div>
+        <br>
     </div>
   </div>
 </div>
