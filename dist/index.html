@@ -103,7 +103,7 @@
           <a class="hover:underline font-thin text-xs hidden lg:block lg:float-right mt-1" href="#">Xbox</a>
           
           
-          <a class="hover:underline font-thin text-xs block lg:hidden float-right focus:border-dashed
+          <a onclick="my()" class="hover:underline font-thin text-xs block lg:hidden float-right focus:border-dashed
           focus:border-2
           focus:border-blue-200
           focus:bg-slate-50 px-4 py-3 mt-[-10px] " href="#" >More <img class="pt-2 w-3 float-right ml-1" src="../img/chevron-down-solid.svg" alt=""></a>
@@ -153,25 +153,25 @@
     </div>
   </div>
 </div>
-<div id="myfas" class="allm w-full absolute z-10 hidden ">
+<div id="my" class="allm w-full absolute z-10 hidden ">
   <div class="allm_a w-10/12 m-auto bg-slate-50">
     <nav class=" inline-block">
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Windows Apps</a></li>
         <li class=" text-xs"><a class=" hover:underline" href="#">OneDrive</a></li>
-        <li><a class=" hover:underline" href="#">Outlook</a></li>
-        <li><a class=" hover:underline" href="#">Skype</a></li>
-        <li><a class=" hover:underline" href="#">OneNote</a></li>
-        <li><a class=" hover:underline" href="#">Microsoft Teams</a></li>
-        <li><a class=" hover:underline" href="#">Microsoft Edge</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Outlook</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Skype</a></li>
+        <li><a class=" hover:underline text-xs" href="#">OneNote</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Microsoft Teams</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Microsoft Edge</a></li>
       </ul>
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">PCs & Devices</a></li>
-        <li class=" text-xs"><a class=" hover:underline" href="#">Computer</a></li>
-        <li><a class=" hover:underline" href="#">Shop Xbox</a></li>
-        <li><a class=" hover:underline" href="#">Accessories</a></li>
-        <li><a class=" hover:underline" href="#">VR & mixed reality</a></li>
-        <li><a class=" hover:underline" href="#">Phones</a></li>
+        <li class=" text-xs"><a class="text-xs hover:underline" href="#">Computer</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Shop Xbox</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Accessories</a></li>
+        <li><a class=" hover:underline text-xs" href="#">VR & mixed reality</a></li>
+        <li><a class=" hover:underline text-xs" href="#">Phones</a></li>
       </ul>     
       <ul class="py-5 px-7 float-left space-y-4">
         <li class=" font-bold"><a class=" hover:underline" href="#">Entertainment</a></li>
@@ -221,7 +221,7 @@
 </div>
 <script>
   function myFunctionsef(){
-      var x = document.getElementById("myfas");
+      var x = document.getElementById("my");
       if (x.style.display === "none"){
           x.style.display = "block";}
       else{
@@ -240,7 +240,6 @@
         * {box-sizing: border-box}
         body {font-family: Verdana, sans-serif; margin:0}
         .mySlides {display: none}
-        /* .mySlides2 {display: none} */
         img {vertical-align: middle;}
         
         /* Slideshow container */
@@ -311,16 +310,6 @@
           display: inline-block;
           transition: background-color 0.6s ease;
         }
-        /* .dot2 {
-          cursor: pointer;
-          height: 5px;
-          width: 5px;
-          margin: 0 2px;
-          background-color: black;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        } */
         .zzz:hover + .nunn{
           display: block;
         }
@@ -338,7 +327,6 @@
           animation-name: fade;
           animation-duration: 1.5s;
         }
-        
         @-webkit-keyframes fade {
           from {opacity: .4} 
           to {opacity: 1}
@@ -353,11 +341,13 @@
         @media only screen and (max-width: 300px) {
           .prev, .next,.text {font-size: 11px}
         }
+        
+        
         </style>
         
-        <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%]">
+        <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%] ">
           <div class="slideshow-container ">  
-            <div class="mySlides fade pc:flex">
+            <div class="mySlides fade pc:flex ">
               <img class=" pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s1.webp">
               <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] pc:text-left text-center">   
                 <div class="mgg  py-14 px-8 sm:h-[324px]">
@@ -376,7 +366,7 @@
                 </div>
               </div>
             </div>
-           </div> 
+           </div>
             <div class="mySlides fade">
               <div class="numbertext"></div>
               <img class="pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s2.webp" >
@@ -439,21 +429,21 @@
         }
 
         function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+          }
         </script>
     </div>
   </div>
@@ -589,64 +579,335 @@
   </div>
 </div>
 <!-- .......part7....... -->
-<div class="mt  xl:w-11/12 xl:m-auto  w-full">
-  <div class="mta">
-    <div class="mtt w-full bg-blue-700 ">
-      <a class=" text-center block hover:underline hover:ml-4 text-white text-xs py-3" href="#">Infinite digits, excellent savings on PCs, Surface, games, and more. Shop Pi Day Sale <span > ></span></a>
+<style>
+
+.slider {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.slider img{
+  background-size: cover;
+}
+.slide_viewer {
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+  .previous_btn {
+    align-items: center;
+  }
+  .next_btn {
+    align-items: center;
+  }
+.dot_2 {
+          cursor: pointer;
+          height: 5px;
+          width: 5px;
+          margin: 0 2px;
+          background-color: white;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+</style>
+<div class="p_7 xm-h[550px] h-[650px] pc:h-auto">
+  <div class="slider xl:w-9/12 xl:m-auto ">
+    <div class="slide_viewer ">
+      <div class="slide_group xl:w-[125%] xl:ml-[-122px]">
+        <div class="slide">
+          <img class=" pc:float-right w-full   pc:h-[340px] h-52 pc:absolute " src="../img/s3.webp" alt="">
+  
+          <div class=" text py-14 pc:float-left  pc:w-1/2 pc:text-left text-center bg-slate-800 pc:bg-transparent pc:relative">   
+            <div class="mgg  py-14 px-8 sm:h-[324px]">
+              <h1 class=" text-white text-xl font-bold py-2" >Womens History Month</h1>
+              <p class="text-xs py-1 text-white " >When authenticity and meaningfull impact are emcouraged, society thrives thrives,  wWhen we are not limited, we all thrive</p>
+              <div class="butt mt-4 py-1">
+                <button class=" py-3" ><a class=" px-3 py-2 bg-white text-black hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
+              </div>
+              <div style="text-align:center slide_buttons" class=" pt-6 pc:hidden ">
+                <a class="dot_2 next_btn " onclick="currentSlide(1)"></a>
+                <a class="dot_2  previous_btn" onclick="currentSlide()"></a>
+                <span  title="pause slider" class=" cursor-pointer" >||</span>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="slide">
+          <img class=" pc:float-right w-full   pc:h-[340px] h-32 pc:absolute" src="../img/s4.jpeg" alt="">
+  
+  
+          <div class="text py-14 pc:float-left  pc:w-1/2 pc:text-left text-center bg-slate-800 pc:bg-transparent pc:relative">   
+            <div class="mgg  py-8 px-8 sm:h-[324px]">
+              <h1 class=" text-white  text-xl font-bold py-2" >Up To 200$ off select Surface pro 8</h1>
+              <p class="text-xs py-1 text-white " >As we work toward our commitment to a net-zero future, we strive to remain transparent on our progress and share our learnings along the way</p>
+              <div class="butt mt-4 py-1">
+                <button class=" py-3 text-white " ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Read the blog <span class="hover:pl-2" >></span></a></button>
+                <br class="hidden pc:block">
+                <button class=" py-3 text-white "><a class=" px-3 py-2 hover:underline font-bold" href="#">Read the report <span class="hover:pl-2" >></span></a></button>
+              </div>
+              <div style="text-align:center slide_buttons" class=" pt-6 pc:hidden ">
+                <a class="dot_2 next_btn" onclick="currentSlide(1)"></a>
+                <a class="dot_2  previous_btn" onclick="currentSlide()"></a>
+                <span  title="pause slider" class=" cursor-pointer" >||</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mttb xl:w-11/12 xl:m-auto  w-full">
-        <div class="zzz pc:h-96 pc:bg-[#f2f2f2] xl:ml-[-50px] xl:w-[109%]">
-          <div class="slideshow-container ">  
-            <div class="mySlides fade pc:flex">
-              <img class=" pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s1.webp">
-              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] pc:text-left text-center">   
-                <div class="mgg  py-14 px-8 sm:h-[324px]">
-                  <h1 class=" text-black text-xl font-bold py-2" >Up To 200$ off select Surface pro 8</h1>
-                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
-                  <div class="butt mt-4 py-1">
-                    <button class=" py-3" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold" href="#">Learn more <span class="hover:pl-2" >></span></a></button>
-                    <br class="hidden pc:block">
-                    <button class=" py-3"><a class=" px-3 py-2 hover:underline font-bold" href="#">Configer now<span class="hover:pl-2" >></span></a></button>
-                  </div>
-                  <div style="text-align:center" class=" pt-3 pc:hidden">
-                    <span class="dot " onclick="currentSlide(1)"></span> 
-                    <span class="dot " onclick="currentSlide(2)"></span>
-                    <span  title="pause slider" class=" cursor-pointer" >||</span>
+   </div><!-- End // .slider -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                    <div style="text-align:center slide_buttons" class=" pt-6 pc:hidden">
+                      <a class="dot next_btn" onclick="currentSlide(1)"></a>
+                      <a class="dot  previous_btn" onclick="currentSlide()"></a>
+                      <span  title="pause slider" class=" cursor-pointer" >||</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-           </div> 
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img class="pc:float-right w-full pc:w-1/2  pc:h-[340px]" src="../img/s2.webp" >
-              <div class="text py-14 bg-[#e6e6e6] pc:float-left  pc:w-1/2 pc:bg-[#f2f2f2] h-[340px]  pc:text-justify text-center">
-                <div class="mgg py-14 px-8">
-                  <h1 class=" text-black text-xl font-bold py-2" >Microsoft 365</h1>
-                  <p class="text-xs py-1" >Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
-                  <div class="butt mt-4 py-1">
-                    <button class=" py-2" ><a class=" px-3 py-2 bg-black text-white hover:underline font-bold " href="#">For up to 6 people <span class="hover:pl-2" >></span></a></button>
-                    <br class="hidden pc:block">
-                    <button class=" py-2"><a class=" px-3 py-2 hover:underline font-bold" href="#">For 1 person<span class="hover:pl-2" >></span></a></button>
-                  </div>
-                  <div style="text-align:center" class=" pt-6 pc:hidden ">
-                    <span class="dot " onclick="currentSlide(1)"></span> 
-                    <span class="dot " onclick="currentSlide(2)"></span>
-                    <span  title="pause slider" class=" cursor-pointer" >||</span>
-                  </div>
-                </div>
+              <div class="text-center hidden pc:block pc:py-5 relative mt-72">
+                <a class="dot_2 next_btn" onclick="currentSlide(1)"></a>
+                      <a class="dot_2  previous_btn" onclick="currentSlide()"></a>
+                <span  title="pause slider2" class=" cursor-pointer" >||</span>
               </div>
-            </div>
-            <div class="text-center hidden pc:block pc:py-5">
-              <span class="dot " onclick="currentSlide(1)"></span> 
-              <span class="dot " onclick="currentSlide(2)"></span>
-              <span  title="pause slider" class=" cursor-pointer" >||</span>
-            </div>
-        </div>
-        </div>
-        <br>
+          </div>
+          </div>
+          <br>
+      </div>
     </div>
   </div>
+</div>
+
+<script>
+  $('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+  
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+    
+    advance();
+    
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+    
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+    
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+    
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+  
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(1);
+      }
+    }, 5000);
+  }
+  
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+  
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+  
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+    
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+  
+  advance();
+});
+</script>
+<!-- ...........part8...... -->
+<div class="p_8 flex pl-8 space-x-4 py-4">
+  <p>Follow microsoft</p>
+  <a href="#"><img class="h-8" src="../img/facebook.png" alt=""></a>
+  <a href="#"><img class="h-8" src="../img/twitter.png" alt=""></a>
+  <a href="#"><img class="h-8" src="../img/linkedin.png" alt=""></a>
+</div>
+<!-- ...........part-9....... -->
+<div class="top_9 overflow-auto py-10 bg-[#f2f2f2]">
+  <div class=" w-11/12 mt-2 xl:flex m-auto">
+    <div class="ttx f4:flex">
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold"><a href="#">What's new</a></li>
+            <li class="hover:underline text-xs"><a href="#">Surface Pro 8</a></li>
+            <li class="hover:underline text-xs"><a href="#">Surface laptop studio</a></li>
+            <li class="hover:underline text-xs"><a href="#">Surface Pro 3</a></li>
+            <li class="hover:underline text-xs"><a href="#">surface Go 3</a></li>
+            <li class="hover:underline text-xs"><a href="#">Surface Duo 2</a></li>
+            <li class="hover:underline text-xs"><a href="#">Surface pro 7+</a></li>
+            <li class="hover:underline text-xs"><a href="#">Windows 11 apps</a></li>
+            <li class="hover:underline text-xs"><a href="#">HoloLens 2</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold "><a href="#">Microsoft Store</a></li>
+            <li class="hover:underline text-xs"><a href="#">Account Profile</a></li>
+            <li class="hover:underline text-xs"><a href="#">Download Center</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft Stor Support</a></li>
+            <li class="hover:underline text-xs">Return</li>
+            <li class="hover:underline text-xs"><a href="#">Virtual Workshop and traking</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft Stor Promise</a></li>
+            <li class="hover:underline text-xs"><a href="#">Flexible Payments</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold"><a href="#">Education</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft in Education</a></li>
+            <li class="hover:underline text-xs"><a href="#">Office for students</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft 365 for School</a></li>
+            <li class="hover:underline text-xs"><a href="#">Deals for students and parents</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft Azure in education</a></li>
+            <li class="hover:underline text-xs"><a href="#">Education consultation appoinment</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="tty f4:flex">
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold"><a href="#">Enterprise</a></li>
+            <li class="hover:underline text-xs"><a href="#">Azura</a></li>
+            <li class="hover:underline text-xs"><a href="#">AppSurce</a></li>
+            <li class="hover:underline text-xs"><a href="#">Automotive</a></li>
+            <li class="hover:underline text-xs"><a href="#">Government</a></li>
+            <li class="hover:underline text-xs"><a href="#">Healthcare</a></li>
+            <li class="hover:underline text-xs"><a href="#">Manufacturing</a></li>
+            <li class="hover:underline text-xs"><a href="#">Financial services</a></li>
+            <li class="hover:underline text-xs"><a href="#">Retail</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold"><a href="#">Developer</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft Visual Studio</a></li>
+            <li class="hover:underline text-xs"><a href="#">Windows Dev Center</a></li>
+            <li class="hover:underline text-xs"><a href="#">Developer Center</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft developer program</a></li>
+            <li class="hover:underline text-xs">Channel 9</li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft 365 Dev Center</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft 365 Developer Program</a></li>
+            <li class="hover:underline text-xs"><a href="#">Microsoft Garage</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_1 px-2 pt-10 f4:w-96 xl:w-52">
+        <nav>
+          <ul class="space-y-4">
+            <li class="hover:underline font-bold"><a href="#">Company</a></li>
+            <li class="hover:underline text-xs"><a href="#">Careers</a></li>
+            <li class="hover:underline text-xs"><a href="#">About Microsoft</a></li>
+            <li class="hover:underline text-xs"><a href="#">Company news</a></li>
+            <li class="hover:underline text-xs"><a href="#">Privacy at Microsoft</a></li>
+            <li class="hover:underline text-xs"><a href="#">Investors</a></li>
+            <li class="hover:underline text-xs"><a href="#">Diversity and inclusion</a></li>
+            <li class="hover:underline text-xs"><a href="#">Accessibility</a></li>
+            <li class="hover:underline text-xs"><a href="#">Security</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ......part10...... -->
+<div class="top_9 overflow-auto py-10 bg-[#f2f2f2] ">
+    <div class=" w-11/12 mt-2 m-auto">
+      <div class="ttop flex xl:flex-none xl:float-left">
+        <img class="w-5 xl:h-5" src="../img/world.png" alt=""><span class=" pl-2 hover:underline text-xs"><a href="#">English (United States)</a></span>
+      </div>
+    <div class="ttop2 mt-5 xl:mt-0">
+      <nav class="xl:float-right">
+        <ul class="flex space-x-4 xl:float-right">
+          <li class="hover:underline text-xs"><a href="#">Contact Microsoft</a></li>
+          <li class="hover:underline text-xs"><a href="#">Privacy</a></li>
+          <li class="hover:underline text-xs"><a href="#">Terms of use</a></li>
+          <li class="hover:underline text-xs"><a href="#">Trademarks</a></li>
+          <li class="hover:underline text-xs"><a href="#">Safety & eco</a></li>
+          <li class="hover:underline text-xs"><a href="#"></a></li>
+          <li class="hover:underline text-xs"><a href="#">About our ads</a></li>
+          <li class="hover:underline text-xs"><a href="#">© Microsoft 2022</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
 </div>
 </body>
 </html>
